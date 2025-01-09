@@ -3,10 +3,19 @@
 ### python3
 
 #### Terminal command:
-```pip install yt-dlp```
+```
+pip install yt-dlp
+```
 
 #### Powersell command (admin):
-```Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))```
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
 
 #### Terminal command (admin): 
-```choco install ffmpeg```
+```
+choco install ffmpeg
+python3 -m venv ./venv
+venv/bin/pip install yt-dlp
+venv/bin/python downloader_cizgi_film.py
+```
